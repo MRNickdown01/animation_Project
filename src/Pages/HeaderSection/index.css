@@ -1,0 +1,28 @@
+.header-hero-img {
+  background-image: url(../../assets/hero-bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-hero-text {
+  text-align: center;
+  font-size: 11rem;
+  font-weight: bold;
+  letter-spacing: 2rem;
+  color: #504d58;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aimation-girl-img {
+  position: absolute;
+  top: 50%;
+  height: 100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
