@@ -3,6 +3,7 @@ import "./index.css";
 import simpling_girl from "../../assets/Smiling-Girl.png";
 import avatar_1 from "../../assets/avatar_1.png";
 import avatar_2 from "../../assets/avatar_2.png";
+import AboutSection from "../AboutSection";
 
 const HeaderSection = () => {
   useEffect(() => {});
