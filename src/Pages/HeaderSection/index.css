@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .header-hero-img {
   background-image: url(../../assets/hero-bg.jpg);
   height: 100vh;
@@ -13,10 +17,13 @@
   letter-spacing: 2rem;
   color: #504d58;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* .header-hero-text > h1 {
+  height: 200px;
+} */
 
 .aimation-girl-img {
   position: absolute;
@@ -25,4 +32,68 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.hero-circle {
+  z-index: 1;
+  width: 100px;
+  top: 45%;
+  left: 45%;
+  height: 100px;
+  mix-blend-mode: color-burn;
+  background-color: #ef476f;
+  border: 1px rgba(239, 71, 111, 0.18);
+  border-radius: 999px;
+  position: absolute;
+  overflow: hidden;
+  animation: zoomInOut 10s;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(18);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.avtar-fram_2 > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  z-index: 2;
+  top: 25%;
+  right: 20%;
+  position: absolute;
+  animation: myimage_1 3s;
+}
+@keyframes myimage_1 {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+.avtar-fram_1 > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  animation: myimage_2 3s;
+}
+@keyframes myimage_2 {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
 }
