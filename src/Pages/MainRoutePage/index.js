@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderSection from "../HeaderSection";
 import AboutSection from "../AboutSection";
+import AmazingProduct from "../AmazingProduct";
 
 const MainRoutePage = () => {
   return (
@@ -10,6 +11,9 @@ const MainRoutePage = () => {
       </div>
       <div className="about_route">
         <AboutSection />
+      </div>
+      <div className="product_route">
+        <AmazingProduct />
       </div>
     </section>
   );

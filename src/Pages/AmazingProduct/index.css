@@ -1,0 +1,16 @@
+.product_bg_section {
+  background-color: #1e1c20;
+}
+
+.Product_demo_girl {
+  height: 600px;
+  background-image: radial-gradient(
+      circle at 50% 0,
+      rgba(0, 0, 0, 0) 23%,
+      #1e1c20 91%
+    ),
+    url(../../assets/team_2.png);
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, contain;
+}
