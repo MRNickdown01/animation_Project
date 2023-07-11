@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: Manrope-Regular;
+  src: url(../src/assets/font/Manrope-Regular.otf);
+}
+
+.Manrope-Regular {
+  font-family: Manrope-Regular;
+}
+@font-face {
+  font-family: Manrope-Bold;
+  src: url(../src/assets/font/Manrope-Bold.otf);
+}
+.Manrope-Bold {
+  font-family: Manrope-Bold;
+}
+
+@font-face {
+  font-family: Manrope-ExBold;
+  src: url(../src/assets/font/Manrope-ExtraBold.otf);
+}
+.Manrope-ExBold {
+  font-family: Manrope-ExBold;
+}

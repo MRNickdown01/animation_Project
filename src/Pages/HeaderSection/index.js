@@ -12,7 +12,9 @@ const HeaderSection = () => {
       <div className="header-hero-img">
         <img className="aimation-girl-img" src={simpling_girl} />
         <div className="header-hero-text">
-          <h1 className="animate__animated animate__fadeInUp">Drozila</h1>
+          <h1 className="Manrope-ExBold animate__animated animate__fadeInUp">
+            Dozai
+          </h1>
           <div className="hero-circle"></div>
         </div>
         <div className="avtar-fram_1">

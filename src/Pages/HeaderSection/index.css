@@ -12,14 +12,18 @@
 }
 .header-hero-text {
   text-align: center;
-  font-size: 11rem;
+  overflow: visible;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 55rem;
+}
+.header-hero-text > h1 {
+  font-size: 350px;
   font-weight: bold;
   letter-spacing: 2rem;
   color: #504d58;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 /* .header-hero-text > h1 {
   height: 200px;
@@ -37,8 +41,8 @@
 .hero-circle {
   z-index: 1;
   width: 100px;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 58%;
   height: 100px;
   mix-blend-mode: color-burn;
   background-color: #ef476f;

@@ -21,7 +21,7 @@ const AboutSection = () => {
                 textAlign: "start",
               }}
             >
-              <h1>
+              <h1 className="Manrope-Bold">
                 Our Telented Team is
                 <strong className="about_heading_imp"> our Strength</strong>
               </h1>

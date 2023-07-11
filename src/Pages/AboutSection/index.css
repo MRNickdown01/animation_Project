@@ -18,7 +18,7 @@
   margin: 0px;
   color: #fff;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: capitalize;
 }
 .about_team_detail > h1 > .about_heading_imp {
@@ -27,6 +27,7 @@
 .about_team_detail > p {
   color: #6d6875;
   font-size: "25px";
+  margin: 16px 0px;
 }
 
 /* CSS */
