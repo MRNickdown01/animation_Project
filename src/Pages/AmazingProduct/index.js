@@ -1,15 +1,25 @@
 import { Container, Grid } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import $ from "jquery";
 
 const AmazingProduct = () => {
-  const [isActive, setIsActive] = useState(false);
+  // var $ = require( "jquery" );
+  useEffect(() => {
+    $(function () {
+      $(".acc_ctrl").on("click", function (e) {
+        e.preventDefault();
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).next().stop().slideUp(300);
+        } else {
+          $(this).addClass("active");
+          $(this).next().stop().slideDown(300);
+        }
+      });
+    });
+  }, []);
 
-  const handleChange = () => {
-    setIsActive(!isActive);
-  };
-  console.log(isActive);
   return (
     <section className="product_bg_section">
       <Container maxWidth="lg">
@@ -22,20 +32,18 @@ const AmazingProduct = () => {
             <div className="container">
               <ul className="acc">
                 <li>
-                  <button className="acc_ctrl" onClick={handleChange}>
+                  <button className="acc_ctrl">
                     <h2>Holden</h2>
                   </button>
-                  {isActive ? (
-                    <div className="acc_panel">
-                      <p>
-                        GM Holden Ltd, commonly known as Holden, is an
-                        Australian automaker that operates in Australasia and is
-                        headquartered in Port Melbourne, Victoria. The company
-                        was founded in 1856 as a saddlery manufacturer in South
-                        Australia.
-                      </p>
-                    </div>
-                  ) : null}
+                  <div className="acc_panel">
+                    <p>
+                      GM Holden Ltd, commonly known as Holden, is an Australian
+                      automaker that operates in Australasia and is
+                      headquartered in Port Melbourne, Victoria. The company was
+                      founded in 1856 as a saddlery manufacturer in South
+                      Australia.
+                    </p>
+                  </div>
                 </li>
                 <li>
                   <button className="acc_ctrl">
