@@ -18,8 +18,7 @@
 /* accordion css */
 
 h2 {
-  color: #282f35;
-  font-family: "Josefin Sans", Arial, sans-serif;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
   margin: 0;
@@ -40,7 +39,6 @@ p {
 }
 
 .acc {
-  margin: 90px 0;
   overflow: hidden;
   padding: 0;
 }
@@ -51,20 +49,20 @@ p {
 }
 
 .acc_ctrl {
-  background: #ffffff;
+  background: transparent;
   border: none;
   border-bottom: solid 1px #f2f2f2;
   cursor: pointer;
   display: block;
   outline: none;
-  padding: 2em;
+  padding: 1.5em;
   position: relative;
   text-align: start;
   width: 100%;
 }
 
 .acc_ctrl:before {
-  background: #44596b;
+  background: #f77f00;
   content: "";
   height: 2px;
   margin-right: 37px;
@@ -85,7 +83,7 @@ p {
 }
 
 .acc_ctrl:after {
-  background: #44596b;
+  background: #f77f00;
   content: "";
   height: 2px;
   margin-right: 37px;
@@ -109,7 +107,25 @@ p {
 }
 
 .acc_panel {
-  background: #f2f2f2;
-  display: none;
+  background: transparent;
+  /* display: none; */
   overflow: hidden;
+}
+
+.heading_title > h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  margin: 16px 0px 0px 0px;
+  line-height: 60px;
+}
+.heading_title > p {
+  color: #6d6875;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 0px 0px 0px;
+  line-height: 25.6px;
+}
+.product_detail_div {
+  padding: 60px;
 }
