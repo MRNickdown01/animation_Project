@@ -6,23 +6,30 @@ import $ from "jquery";
 const AmazingProduct = () => {
   // var $ = require( "jquery" );
   const [isShow, setIsShow] = useState(false);
-  useEffect(() => {
-    $(function () {
-      $(".acc_ctrl").on("click", function (e) {
-        e.preventDefault();
-        if ($(this).hasClass("active")) {
-          $(this).removeClass("active");
-          $(this).next().stop().slideUp(300);
-        } else {
-          $(this).addClass("active");
-          $(this).next().stop().slideDown(300);
-        }
-      });
-    });
-  }, []);
+  const [indexData, setIndexData] = useState(10);
+  const [diffData, setDiffData] = useState([
+    { label: "Holden", isShow: false },
+    { label: "ford", isShow: false },
+    { label: "Toyata", isShow: false },
+  ]);
+  // useEffect(() => {
+  //   $(function () {
+  //     $(isShow).on("click", function (e) {
+  //       e.preventDefault();
+  //       if ($(this).hasClass("active")) {
+  //         $(this).removeClass("active");
+  //         $(this).next().stop().slideUp(300);
+  //       } else {
+  //         $(this).addClass("active");
+  //         $(this).next().stop().slideDown(300);
+  //       }
+  //     });
+  //   });
+  // }, []);
 
-  const handleChange = () => {
+  const handleChange = (index) => {
     setIsShow(!isShow);
+    setIndexData(index);
   };
 
   return (
@@ -52,54 +59,68 @@ const AmazingProduct = () => {
               </div>
               <div className="container">
                 <ul className="acc">
-                  <li>
-                    <button className="acc_ctrl" onClick={handleChange}>
-                      <h2 className="Manrope-ExBold">Holden</h2>
-                    </button>
-                    {isShow && (
-                      <div className="acc_panel">
-                        <p>
-                          GM Holden Ltd, commonly known as Holden, is an
-                          Australian automaker that operates in Australasia and
-                          is headquartered in Port Melbourne, Victoria. The
-                          company was founded in 1856 as a saddlery manufacturer
-                          in South Australia.
-                        </p>
-                      </div>
-                    )}
-                  </li>
-                  <li>
-                    <button className="acc_ctrl" onClick={handleChange}>
-                      <h2 className="Manrope-ExBold">Ford</h2>
-                    </button>
-                    {isShow && (
-                      <div className="acc_panel">
-                        <p>
-                          The Ford Motor Company (commonly referred to as simply
-                          Ford) is an American multinational automaker
-                          headquartered in Dearborn, Michigan, a suburb of
-                          Detroit. It was founded by Henry Ford and incorporated
-                          on June 16, 1903.
-                        </p>
-                      </div>
-                    )}
-                  </li>
-                  <li>
-                    <button className="acc_ctrl" onClick={handleChange}>
-                      <h2 className="Manrope-ExBold">Toyota</h2>
-                    </button>
-                    {isShow && (
-                      <div className="acc_panel">
-                        <p>
-                          Toyota Motor Corporation is a Japanese automotive
-                          manufacturer which was founded by Kiichiro Toyoda in
-                          1937 as a spinoff from his father's company Toyota
-                          Industries, which is currently headquartered in
-                          Toyota, Aichi Prefecture, Japan.
-                        </p>
-                      </div>
-                    )}
-                  </li>
+                  {diffData?.map((i, index) => (
+                    <li key={index}>
+                      <button
+                        className="acc_ctrl"
+                        id={i?.label}
+                        onClick={() => {
+                          handleChange(index);
+                        }}
+                      >
+                        <h2 className="Manrope-ExBold">{i?.label}</h2>
+                      </button>
+                      {isShow && indexData === index && (
+                        <div className="acc_panel">
+                          <p>
+                            GM Holden Ltd, commonly known as Holden, is an
+                            Australian automaker that operates in Australasia
+                            and is headquartered in Port Melbourne, Victoria.
+                            The company was founded in 1856 as a saddlery
+                            manufacturer in South Australia.
+                          </p>
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                  {/* <li>
+                      <button
+                        className="acc_ctrl"
+                        onClick={() => handleChange(index)}
+                      >
+                        <h2 className="Manrope-ExBold">{i?.label}</h2>
+                      </button>
+                      {isShow && (
+                        <div className="acc_panel">
+                          <p>
+                            The Ford Motor Company (commonly referred to as
+                            simply Ford) is an American multinational automaker
+                            headquartered in Dearborn, Michigan, a suburb of
+                            Detroit. It was founded by Henry Ford and
+                            incorporated on June 16, 1903.
+                          </p>
+                        </div>
+                      )}
+                    </li>
+                    <li>
+                      <button
+                        className="acc_ctrl"
+                        onClick={() => handleChange(index)}
+                      >
+                        <h2 className="Manrope-ExBold">{i?.label}</h2>
+                      </button>
+                      {isShow && (
+                        <div className="acc_panel">
+                          <p>
+                            Toyota Motor Corporation is a Japanese automotive
+                            manufacturer which was founded by Kiichiro Toyoda in
+                            1937 as a spinoff from his father's company Toyota
+                            Industries, which is currently headquartered in
+                            Toyota, Aichi Prefecture, Japan.
+                          </p>
+                        </div>
+                      )}
+                    </li> */}
                 </ul>
               </div>
             </div>
