@@ -1,3 +1,23 @@
 .review_bg_section {
   background: #1e1c20;
 }
+.review_details_div {
+  padding: 60px;
+}
+.customer_no {
+  margin: 10px;
+  color: #f77f00;
+  font-size: 4rem;
+  font-family: Manrope-Bold;
+  src: url(../../../src/assets/font/Manrope-Bold.otf);
+}
+.project_no {
+  margin: 10px;
+  color: #ef476f;
+  font-size: 4rem;
+  font-family: Manrope-Bold;
+  src: url(../../../src/assets/font/Manrope-Bold.otf);
+}
+.review_counting {
+  display: flex;
+}

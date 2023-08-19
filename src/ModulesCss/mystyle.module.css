@@ -1,0 +1,17 @@
+.h1_title {
+  margin: 0px;
+  color: #fff;
+  line-height: 60px;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Manrope-Bold;
+  src: url(../../src/assets/font/Manrope-Bold.otf);
+}
+.p_details {
+  color: #6d6875;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 0px 0px 0px;
+  line-height: 25.6px;
+}

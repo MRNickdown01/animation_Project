@@ -17,7 +17,8 @@
 .about_team_detail > h1 {
   margin: 0px;
   color: #fff;
-  font-size: 50px;
+  line-height: 60px;
+  font-size: 3em;
   font-weight: bold;
   text-transform: capitalize;
 }
