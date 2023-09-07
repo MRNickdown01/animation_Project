@@ -1,11 +1,17 @@
 import { Container, Grid } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ReviewCard from "../../Component/ReviewCard";
 import "./index.css";
 import data from "./data.json";
 import styles from "../../ModulesCss/mystyle.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ReviewSection = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   let reviewcard = data?.review;
   console.log(reviewcard);
   return (
@@ -15,7 +21,11 @@ const ReviewSection = () => {
           <Grid item xs={1}></Grid>
           <Grid item xs={5}>
             {reviewcard?.map((i, index) => (
-              <div key={index} style={{ padding: "12px 0px" }}>
+              <div
+                key={index}
+                style={{ padding: "12px 0px" }}
+                data-aos="fade-left"
+              >
                 <ReviewCard
                   name={i?.name}
                   designation={i?.designation}
@@ -25,9 +35,12 @@ const ReviewSection = () => {
             ))}
           </Grid>
           <Grid item xs={6}>
-            <div className="review_details_div">
-              <h6>TESTIMONILAS</h6>
-              <h1 className={styles.h1_title}>What They Say's About Us</h1>
+            <div className="review_details_div" data-aos="zoom-in">
+              <h6 className={styles?.p_details}>TESTIMONILAS</h6>
+              <h1 className={styles.h1_title}>
+                What They <br />{" "}
+                <span style={{ color: "#6d6875" }}>Say's About Us</span>
+              </h1>
               <p className={styles?.p_details}>
                 With the greatest performance improvement and massive new
                 features, the Salerio template pushes the limits of what is
@@ -36,12 +49,14 @@ const ReviewSection = () => {
               <Grid container>
                 <Grid xs={6}>
                   <h1 className="customer_no"> 17K+ </h1>
-                  <h6>Happy Costumers</h6>
+                  <span className={styles?.span_details}>Happy Costumers</span>
                 </Grid>
                 <Grid xs={5}>
                   <Grid xs={1}></Grid>
                   <h1 className="project_no"> 2M+ </h1>
-                  <h6 className="ion-no-margin">Projects Designed</h6>
+                  <span className={styles?.span_details}>
+                    Projects Designed
+                  </span>
                 </Grid>
               </Grid>
             </div>

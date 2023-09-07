@@ -15,3 +15,12 @@
   margin: 16px 0px 0px 0px;
   line-height: 25.6px;
 }
+
+.span_details {
+  color: #6d6875;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Manrope-Regular;
+  src: url(../../src/assets/font/Manrope-Regular.otf);
+}

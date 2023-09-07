@@ -42,9 +42,6 @@
   src: url(../src/assets/font/Manrope-Regular.otf);
 }
 
-.Manrope-Regular {
-  font-family: Manrope-Regular;
-}
 @font-face {
   font-family: Manrope-Bold;
   src: url(../src/assets/font/Manrope-Bold.otf);

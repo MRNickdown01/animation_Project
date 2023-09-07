@@ -5,19 +5,25 @@
   padding: 60px;
 }
 .customer_no {
-  margin: 10px;
+  margin: 0px;
   color: #f77f00;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: Manrope-Bold;
   src: url(../../../src/assets/font/Manrope-Bold.otf);
 }
 .project_no {
-  margin: 10px;
+  margin: 0px;
   color: #ef476f;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: Manrope-Bold;
   src: url(../../../src/assets/font/Manrope-Bold.otf);
 }
 .review_counting {
   display: flex;
+}
+.review_details_div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 40px;
 }
