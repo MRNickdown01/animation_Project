@@ -1,0 +1,25 @@
+{
+  "Post": [
+    {
+      "img": "../../assets/Images/post_1.jpeg",
+      "heading": "10 Web Design Blogs You Can't Miss",
+      "detail": "Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Nam pretium turpis et arcu.",
+      "date": "Monday, October 3, 2022",
+      "btn": "Marketing"
+    },
+    {
+      "img": "../../assets/Images/post_2.jpg",
+      "heading": "How to improve Web Design Process",
+      "detail": "Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Nam pretium turpis et arcu.",
+      "date": "Monday, October 3, 2022",
+      "btn": "Marketing"
+    },
+    {
+      "img": "../../assets/Images/post_3.jpg",
+      "heading": "20 Myths About Web Design",
+      "detail": "Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Nam pretium turpis et arcu.",
+      "date": "Monday, October 3, 2022",
+      "btn": "Web Design"
+    }
+  ]
+}
