@@ -18,8 +18,7 @@ const ReviewSection = () => {
     <section className="review_bg_section">
       <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid item xs={1}></Grid>
-          <Grid item xs={5}>
+          <Grid item xs={6}>
             {reviewcard?.map((i, index) => (
               <div
                 key={index}

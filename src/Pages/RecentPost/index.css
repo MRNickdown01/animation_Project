@@ -1,0 +1,51 @@
+.post_image {
+  max-width: 550px;
+  max-height: 480px;
+}
+.recent_post_section {
+  background-color: #1e1c20;
+  padding: 5rem 0;
+}
+.post_heading {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Manrope-Bold;
+  src: url(../../../src/assets/font/Manrope-Bold.otf);
+  letter-spacing: 1px;
+  line-height: 3rem;
+}
+.post_card_detail {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #1e1c20;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.post_detail_content {
+  padding: 50px;
+}
+.post_detail_content > p {
+  margin: 0;
+  margin: 20px 0px;
+  font-family: Manrope-Regular;
+  src: url(../../../src/assets/font/Manrope-Regular.otf);
+}
+.recent_post_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent_post_date > h3 {
+  font-family: Manrope-Bold;
+  src: url(../../../src/assets/font/Manrope-Bold.otf);
+  color: #fff;
+}
+.check_btn {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  height: 45px;
+  border-radius: 25px;
+}
