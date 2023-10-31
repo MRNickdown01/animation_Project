@@ -6,6 +6,7 @@ import ReviewSection from "../ReviewSection";
 import $ from "jquery";
 import { useEffect } from "react";
 import RecentPost from "../RecentPost";
+import Award from "../Award";
 
 const MainRoutePage = () => {
   // useEffect(() => {
@@ -38,6 +39,9 @@ const MainRoutePage = () => {
       </div>
       <div className="recent_post_route">
         <RecentPost />
+      </div>
+      <div className="award_route">
+        <Award />
       </div>
     </section>
   );
