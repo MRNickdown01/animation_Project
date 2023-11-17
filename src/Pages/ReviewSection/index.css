@@ -27,3 +27,8 @@
   top: 0;
   padding: 40px;
 }
+@media screen and (max-width: 720px) {
+  .review_details_div {
+    padding: 0px;
+  }
+}

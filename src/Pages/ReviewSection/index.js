@@ -18,7 +18,7 @@ const ReviewSection = () => {
     <section className="review_bg_section">
       <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid item xs={6}>
+          <Grid item lg={6}>
             {reviewcard?.map((i, index) => (
               <div
                 key={index}
@@ -33,7 +33,7 @@ const ReviewSection = () => {
               </div>
             ))}
           </Grid>
-          <Grid item xs={6}>
+          <Grid item lg={6}>
             <div className="review_details_div" data-aos="zoom-in">
               <h6 className={styles?.p_details}>TESTIMONILAS</h6>
               <h1 className={styles.h1_title}>
@@ -50,8 +50,7 @@ const ReviewSection = () => {
                   <h1 className="customer_no"> 17K+ </h1>
                   <span className={styles?.span_details}>Happy Costumers</span>
                 </Grid>
-                <Grid xs={5}>
-                  <Grid xs={1}></Grid>
+                <Grid xs={6}>
                   <h1 className="project_no"> 2M+ </h1>
                   <span className={styles?.span_details}>
                     Projects Designed

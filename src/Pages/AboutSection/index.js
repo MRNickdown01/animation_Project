@@ -12,7 +12,7 @@ const AboutSection = () => {
             <Grid item xs={1}></Grid>
             <Grid
               item
-              xs={5}
+              lg={5}
               className="about_team_detail"
               style={{
                 display: "flex",
@@ -32,7 +32,7 @@ const AboutSection = () => {
               </p>
               <button className="about_more-info">More info</button>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item lg={6}>
               <div className="about_team_img"></div>
             </Grid>
           </Grid>

@@ -37,10 +37,10 @@ const AmazingProduct = () => {
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item xs={1}></Grid>
-          <Grid item xs={5}>
+          <Grid item lg={5} md={12}>
             <div className="Product_demo_girl"></div>
           </Grid>
-          <Grid item xs={6} sx={{ padding: "0px" }}>
+          <Grid item lg={6} md={12} sx={{ padding: "0px" }}>
             <div className="product_detail_div">
               <div className="heading_title">
                 <h1 className="Manrope-ExBold">

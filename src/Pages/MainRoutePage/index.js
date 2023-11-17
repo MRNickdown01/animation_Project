@@ -3,11 +3,12 @@ import HeaderSection from "../HeaderSection";
 import AboutSection from "../AboutSection";
 import AmazingProduct from "../AmazingProduct";
 import ReviewSection from "../ReviewSection";
-import $ from "jquery";
+import $, { event } from "jquery";
 import { useEffect } from "react";
 import RecentPost from "../RecentPost";
 import Award from "../Award";
-
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import { useAlert } from "react-alert";
 const MainRoutePage = () => {
   // useEffect(() => {
   //   $(function () {
@@ -23,6 +24,7 @@ const MainRoutePage = () => {
   //     });
   //   });
   // }, []);
+
   return (
     <section className="maine_route_page">
       <div className="header_route">

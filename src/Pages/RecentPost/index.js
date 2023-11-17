@@ -49,12 +49,12 @@ const RecentPost = () => {
         {post?.map((i, index) => (
           <div className="post_card_detail">
             <Grid container spacing={2} key={index}>
-              <Grid item xs={6}>
+              <Grid item lg={6}>
                 <div>
                   <img className="post_image" src={i?.image} />
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item lg={6}>
                 <div className="post_detail_content">
                   <h2 className="post_heading">{i?.heading}</h2>
                   <p className={styles?.p_details}>{i?.detail}</p>

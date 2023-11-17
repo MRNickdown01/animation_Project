@@ -129,3 +129,9 @@ p {
 .product_detail_div {
   padding: 60px;
 }
+
+@media screen and (max-width: 720px) {
+  .product_detail_div {
+    padding: 0px;
+  }
+}
