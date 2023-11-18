@@ -68,4 +68,13 @@
     line-height: 55px;
     width: 150px;
   }
+  @media screen and (max-width: 720px) {
+    .text_center_div > h2,
+    .text_center_div > h1 {
+      font-size: 3rem;
+    }
+    .text_center_div > h6 {
+      font-size: 14px;
+    }
+  }
 }
