@@ -1,7 +1,10 @@
 .product_bg_section {
   background-color: #1e1c20;
+  overflow: hidden;
 }
-
+.over_image > img {
+  display: none;
+}
 .Product_demo_girl {
   height: 600px;
   background-image: radial-gradient(
@@ -128,4 +131,25 @@ p {
 }
 .product_detail_div {
   padding: 60px;
+}
+
+@media screen and (max-width: 720px) {
+  .product_detail_div {
+    padding: 0px;
+  }
+  .over_image > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .Product_demo_girl {
+    display: none;
+  }
+  .heading_title > h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #fff;
+    margin: 16px 0px 0px 0px;
+    line-height: 50px;
+  }
 }

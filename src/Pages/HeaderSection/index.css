@@ -1,3 +1,7 @@
+.header_section_bg {
+  overflow: hidden;
+}
+
 .header-hero-img {
   background-image: linear-gradient(rgba(36, 34, 39, 0.66), #1e1c20 97%),
     url(../../assets/hero-bg_1.jpg);
@@ -20,7 +24,7 @@
   width: 55rem;
 }
 .header-hero-text > h1 {
-  font-size: 350px;
+  font-size: 21.875rem;
   font-weight: bold;
   letter-spacing: 2rem;
   color: #504d58;
@@ -99,5 +103,32 @@
   50% {
     transform: rotate(-180deg);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .avtar-fram_2 > img {
+    width: 100px;
+    height: 100px;
+    top: 23%;
+    right: 2%;
+  }
+  .avtar-fram_1 > img {
+    width: 100px;
+    height: 100px;
+    top: 55%;
+    left: 2%;
+  }
+  .hero-circle {
+    left: 45%;
+    height: 100px;
+    animation: zoomInOut 5s;
+  }
+  .header-hero-text {
+    left: 50%;
+  }
+  .header-hero-text > h1 {
+    font-size: 140px;
+    letter-spacing: 0px;
   }
 }

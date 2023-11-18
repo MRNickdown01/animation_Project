@@ -3,10 +3,11 @@ import HeaderSection from "../HeaderSection";
 import AboutSection from "../AboutSection";
 import AmazingProduct from "../AmazingProduct";
 import ReviewSection from "../ReviewSection";
-import $ from "jquery";
+import $, { event } from "jquery";
 import { useEffect } from "react";
 import RecentPost from "../RecentPost";
 import ContactUs from "../ContactUs";
+import Award from "../Award";
 
 const MainRoutePage = () => {
   // useEffect(() => {
@@ -23,6 +24,7 @@ const MainRoutePage = () => {
   //     });
   //   });
   // }, []);
+
   return (
     <section className="maine_route_page">
       <div className="header_route">
@@ -42,6 +44,9 @@ const MainRoutePage = () => {
       </div>
       <div className="contact_us_route">
         <ContactUs />
+      </div>
+      <div className="award_route">
+        <Award />
       </div>
     </section>
   );

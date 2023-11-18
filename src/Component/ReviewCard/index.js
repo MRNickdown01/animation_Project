@@ -54,14 +54,14 @@ const ReviewCard = (props) => {
         </p>
         <Divider />
         <Grid container alignItems="center" marginY="10px">
-          <Grid item xs={5}>
+          <Grid item lg={5}>
             <Typography gutterBottom component="div" color="#fff">
               Rated <strong style={{ color: "#ef476f" }}>4.5/5</strong>
             </Typography>
           </Grid>
           <Grid
             className="review_card"
-            xs={6}
+            lg={6}
             sx={{
               display: "flex",
               alignItems: "end",
