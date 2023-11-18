@@ -1,5 +1,6 @@
 .review_bg_section {
   background: #1e1c20;
+  overflow: hidden;
 }
 .review_details_div {
   padding: 60px;

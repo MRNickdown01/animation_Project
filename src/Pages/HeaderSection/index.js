@@ -8,7 +8,7 @@ import AboutSection from "../AboutSection";
 const HeaderSection = () => {
   useEffect(() => {});
   return (
-    <section>
+    <section className="header_section_bg">
       <div className="header-hero-img">
         <img className="aimation-girl-img" src={simpling_girl} />
         <div className="header-hero-text">

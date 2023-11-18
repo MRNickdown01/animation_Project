@@ -1,5 +1,6 @@
 .about-bg-section {
   background-color: #1e1c20;
+  overflow: hidden;
 }
 
 .about_team_img {
@@ -68,5 +69,20 @@
     height: 55px;
     line-height: 55px;
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .about_team_img > img {
+    height: 400px;
+    /* background-image: radial-gradient(
+        circle at 50% 0,
+        rgba(0, 0, 0, 0) 36%,
+        #1e1c20 90%
+      ),
+      url(../../assets/team_1.png); */
+    background-position: 0 0, 50%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, contain;
   }
 }
