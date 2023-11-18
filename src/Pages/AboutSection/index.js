@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import aboutTeam_1 from "../../assets/team_1.png";
+import Team_2 from "../../assets/Images/post_2.jpg";
 import { Container, Grid } from "@mui/material";
 const AboutSection = () => {
   return (
@@ -33,7 +34,10 @@ const AboutSection = () => {
               <button className="about_more-info">More info</button>
             </Grid>
             <Grid item lg={6}>
-              <div className="about_team_img"></div>
+              <div className="check">
+                <div className="about_team_img"></div>
+                <img src={aboutTeam_1} />
+              </div>
             </Grid>
           </Grid>
         </Container>
