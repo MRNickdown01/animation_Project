@@ -7,8 +7,7 @@ import $, { event } from "jquery";
 import { useEffect } from "react";
 import RecentPost from "../RecentPost";
 import Award from "../Award";
-import { transitions, positions, Provider as AlertProvider } from "react-alert";
-import { useAlert } from "react-alert";
+
 const MainRoutePage = () => {
   // useEffect(() => {
   //   $(function () {
