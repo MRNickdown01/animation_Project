@@ -1,6 +1,5 @@
 .review_bg_section {
   background: #1e1c20;
-  overflow: hidden;
 }
 .review_details_div {
   padding: 60px;
@@ -31,5 +30,8 @@
 @media screen and (max-width: 720px) {
   .review_details_div {
     padding: 0px;
+  }
+  .review_bg_section {
+    overflow: hidden;
   }
 }
