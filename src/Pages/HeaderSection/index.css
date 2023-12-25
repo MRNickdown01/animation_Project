@@ -120,8 +120,9 @@
     left: 2%;
   }
   .hero-circle {
-    left: 45%;
+    top: 60%;
     height: 100px;
+    left: 44%;
     animation: zoomInOut 5s;
   }
   .header-hero-text {
