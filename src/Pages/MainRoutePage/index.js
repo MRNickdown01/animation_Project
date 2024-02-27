@@ -45,9 +45,9 @@ const MainRoutePage = () => {
       <div className="contact_us_route">
         <ContactUs />
       </div>
-      <div className="award_route">
+      {/* <div className="award_route">
         <Award />
-      </div>
+      </div> */}
     </section>
   );
 };
